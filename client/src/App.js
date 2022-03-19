@@ -3,6 +3,8 @@ import {BrowserRouter,Routes,Route,Link} from 'react-router-dom';
 import LandingPage from './components/view/LandingPage/LandingPage';
 import LoginPage from './components/view/LoginPage/LoginPage';
 import RegisterPage from './components/view/RegisterPage/RegisterPage';
+import Auth from './hoc/auth';
+
 const App = () => {
   return (
     <BrowserRouter>

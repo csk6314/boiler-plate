@@ -72,7 +72,7 @@ app.post("/api/user/login", (req, res) => {
 });
 
 app.get('/api/user/auth',auth,(req,res)=> {
-  req.status(200).json({
+  res.status(200).json({
     _id:req.user._id,
     isAdmin:req.user.role===0?false:true,
     isAuth:true,
